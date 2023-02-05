@@ -17,14 +17,34 @@ public class Main {
         list.add(64);
         list.add(3);
 
-        System.out.println(list.size());
         System.out.println(list.toPrint());
+        System.out.println(list.size());
 
         list.remove(1);
         System.out.println(list.toPrint());
+        System.out.println(list.size());
 
         list.add(5, 2000);
         System.out.println(list.toPrint());
+        System.out.println(list.size());
+
+        list.add(8, 2000);
+        System.out.println(list.toPrint());
+        System.out.println(list.size());
+
+        list.add(0, 2000);
+        System.out.println(list.toPrint());
+        System.out.println(list.size());
+
+        list.add(10, 2000);
+        System.out.println(list.toPrint());
+        System.out.println(list.size());
+
+        list.add(12, 2000);
+        System.out.println(list.toPrint());
+        System.out.println(list.size());
+
+
 
 
     }

@@ -18,17 +18,18 @@ public class ArrayListImplementation {
     }
 
     public void add(int index, int element) {
-        if (index > size || index < 0) {
-            System.out.println("Неверно введен индекс");
-        }
         if (array.length == size) {
             grow();
         }
-        if (index == size) {
+
+        if (index > size || index < 0) {
+            System.out.println("Неверно введен индекс");
+        }
+        else if (index == size) {
             array[size] = element;
             size++;
         }
-        if (index > 0 && index < size) {
+        else {
             int[] newArray = new int[size + 1];
             for (int i = 0; i < index; i++) {
                 newArray[i] = array[i];
